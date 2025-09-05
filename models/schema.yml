@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: astronauts_by_craft
+    description: "Astronauts grouped by craft with appearance statistics"
+    columns:
+      - name: craft
+        description: "The spacecraft name"
+        tests:
+          - not_null
+      - name: name
+        description: "Astronaut name"
+        tests:
+          - not_null
+      - name: appearances
+        description: "Number of times this astronaut was recorded"
+        tests:
+          - not_null
+      - name: first_seen
+        description: "First time this astronaut was recorded"
+      - name: last_seen
+        description: "Last time this astronaut was recorded"
+      - name: processed_at
+        description: "When this record was processed"

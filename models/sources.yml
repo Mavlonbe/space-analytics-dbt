@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: space_data
+    database: space_data
+    schema: space_data
+    tables:
+      - name: astronauts_parsed
+        description: "Parsed astronaut data from the Open Notify API"
+        columns:
+          - name: craft
+            description: "The spacecraft name"
+          - name: name
+            description: "Astronaut name"
+          - name: _inserted_at
+            description: "Timestamp when the data was inserted"
